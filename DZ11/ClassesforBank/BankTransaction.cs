@@ -8,8 +8,8 @@ namespace DZ11.ClassesforBank
 {
     public class BankTransaction
     {
-        public DateTime Date { get;set; }
-        public decimal Amount { get;set; }
+        public DateTime Date { get;private set; }
+        public decimal Amount { get;private set; }
 
         public BankTransaction(decimal amount)
         {

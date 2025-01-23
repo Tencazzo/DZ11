@@ -12,8 +12,8 @@ namespace DZ11.ClassesforBank
         private List<BankTransaction> transactions = new List<BankTransaction>();
         private decimal balance;
 
-        public string AccountNumber { get; private set; } 
-        public string HolderName { get; set; } 
+        public string AccountNumber { get; private set; }
+        public string HolderName { get; private set; }
 
         public BankAccount(string holderName)
         {
@@ -56,8 +56,6 @@ namespace DZ11.ClassesforBank
                 targetAccount.Deposit(amount);
             }
         }
-
-        // Индексатор 
         public BankTransaction this[int index]
         {
             get { return transactions[index]; }
